@@ -9,7 +9,6 @@ import javax.swing.JLabel;
 
 /**
  * The field for the game and shit.
- * The field and shit will most definitely change but it's a start?
  *
  */
 public class Game extends JFrame {

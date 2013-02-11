@@ -18,12 +18,4 @@ public class Player {
 	public void scored(){
 		currentScore++;
 	}
-
-    public int getX(){
-        return x;
-    }
-    
-    public int getY(){
-        return y;
-    }
 }
