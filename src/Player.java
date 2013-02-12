@@ -1,14 +1,15 @@
-
 public class Player {
 
 	private int currentScore;
 	private String name;
-    private int x, y;
+    	private int x, y;
 	
 	
-	public Player(String name){
-		this.name = name;
+	public Player(String playername, int xvalue, int yvalue){
+		name = playername;
 		currentScore = 0;
+		x = xvalue;
+		y = yvalue;
 	}
 	
 	public int getScore(){
@@ -19,11 +20,19 @@ public class Player {
 		currentScore++;
 	}
 
-    public int getX(){
-        return x;
-    }
+    	public int getX(){
+        	return x;
+   	}
     
-    public int getY(){
-        return y;
-    }
+    	public int getY(){
+        	return y;
+    	}
+    
+    	public void moveUp(int boardHeight){
+    		y = y + boardHeight/10;
+    	}
+    
+    	public void moveDown(int boardHeight){
+    		y = y - boardHeight/10;
+    	}
 }
